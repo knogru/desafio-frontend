@@ -1,9 +1,9 @@
 # Teste Front-End
 
-Este teste é um desafio simples de front-end, que server dois propósitos: 
+Este teste é um desafio simples de front-end, que serve dois propósitos: 
 
 1. Demonstrar suas habilidades,
-1. Nos dá um melhor entendimento das suas habilidades.
+1. Nos dar um melhor entendimento das suas habilidades.
 
 ## A tarefa
 
