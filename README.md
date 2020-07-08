@@ -1,45 +1,68 @@
-# Teste Front-End
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Este teste é um desafio simples de front-end, que serve dois propósitos: 
+## Available Scripts
 
-1. Demonstrar suas habilidades,
-1. Nos dar um melhor entendimento das suas habilidades.
+In the project directory, you can run:
 
-## A tarefa
+### `npm start`
 
-O desafio consiste de 2 partes:
-* Parte A: HTML + CSS
-* Parte B: Javascript
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### PARTE A: HTML + CSS
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-![Screen](https://raw.githubusercontent.com/jsvini/desafio-frontend/master/assets/placeholder.png)
+### `npm test`
 
-* Crie um layout baseado na tela acima (placeholder.png)
-* Aplique css no layout de forma consistente, o mais próximo possível do design original.
-* **NOTA:** Você está livre para utilizar qualquer pré-processador que desejar, ou escrever CSS puro. *Ganha mais pontos se explicar a sua escolha.* 
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### PARTE B: Javascript
+### `npm run build`
 
-* Consuma o json @ https://raw.githubusercontent.com/jsvini/desafio-frontend/master/assets/api.json para obter a lista de anúncios de apartamentos. 
-* Exiba os 10 primeiros anúncios no layout HTML + CSS criado na parte A, se mantendo fiel ao layout.
-* **NOTA:** Você está livre para utlizar qualquer framework que desejar, ou fazer diretamente sem framework. *Breve explicação da sua escolha* 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## Instruções adicionais
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Clone este repositório.
-* Quando finalizar, nos envie o link do seu respositório.
-* Deixe comentários onde você não tiver certeza como proceder corretamente.
-* Implementações sem um arquivo README serão automaticamente rejeitadas.
-* Não envie pull requests
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Ganha pontos adicionais
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* Código limpo!
-* Noção do fluxo de uma aplicação.
-* Noção de melhores práticas/padrões de código.
-* Utilização de frameworks.
-* Testes
-* Utilizar ES6 ou superior
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
