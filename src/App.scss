@@ -1,3 +1,10 @@
+/* colors */
+$white: #fff;
+$dark-gray: #444444;
+$light-gray: #b2b2b2;
+$main-gray: #5a5a5a;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -32,21 +39,40 @@ html {
   margin: 20px;
   min-width: 328px;
   width: 30%;
+  position: relative;
 
   img {
     max-width: 100%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+
+  }
+
+  .purpose {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: $light-gray;
+    background-color: $white;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
   }
 
   >div {
-    border: 1px solid #cccccc;
+    border: 1px solid $light-gray;
     margin-top: -4px;
     padding: 40px 30px;
     position: relative;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+
 
     h1 {
-      color: #333333;
+      color: $dark-gray;
       margin: 10px 0 20px 0;
-      height: 35px;
+      height: 38px;
       font-size: 16px;
       overflow: hidden;
       display: -webkit-box;
@@ -58,23 +84,23 @@ html {
       margin-bottom: 60px;
       font-size: 14px;
       font-weight: bold;
-      color: #b1b1b1;
+      color: $light-gray;
     }
 
     >div {
       display: flex;
       justify-content: space-between;
-      color: #5a5a5a;
+      color: $main-gray;
 
       .price {
-        color: #444444;
+        color: $dark-gray;
         font-weight: 700;
       }
 
       .divider {
         height: 100%;
         width: 1px;
-        background-color: #e3e3e3;
+        background-color: $light-gray;
         display: inline-block;
         margin: 0px 10px;
         vertical-align: bottom;

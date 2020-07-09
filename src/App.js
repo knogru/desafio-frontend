@@ -8,11 +8,14 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(
-        "https://raw.githubusercontent.com/jsvini/desafio-frontend/master/assets/api.json"
-      );
+      const response = await axios
+        .get(
+          "https://raw.githubusercontent.com/jsvini/desafio-frontend/master/assets/api.json"
+        )
+        .catch((error) => {
+          console.log(error);
+        });
       setData(response.data.data);
-      // ...
     }
     fetchData();
   }, []);
@@ -22,6 +25,12 @@ function App() {
   var cards = [];
 
   if (data) {
+    /* a condicional da variável price serve para saber se o anuncio é de aluguel ou venda
+     e então exibir o preço correspondente
+     
+     em address eu não tinha certeza se deveria ser exibido com o cep e cidade 
+     (não sou muito boa em alemão), mas foram as informações mais próximas do layout */
+
     cards = filter.map((card, i) => {
       let url =
           card.advertisementAssets[0].advertisementThumbnails.inventory_m.url,
@@ -32,7 +41,8 @@ function App() {
           ? card.advertisementPrice.sellPrice
           : card.advertisementPrice.baseRent,
         numberOfRooms = card.realestateSummary.numberOfRooms,
-        space = Math.round(card.realestateSummary.space);
+        space = Math.round(card.realestateSummary.space),
+        purpose = card.purpose ? "Kaufen" : "Mieten";
       return (
         <Card
           key={i}
@@ -43,11 +53,12 @@ function App() {
           price={price}
           numberOfRooms={numberOfRooms}
           space={space}
+          purpose={purpose}
         />
       );
     });
   }
-  console.log(filter);
+
   return <div className="container">{cards}</div>;
 }
 
