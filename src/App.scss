@@ -1,14 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 1em;
   font-family: sans-serif;
 }
 
 html {
   width: 100%;
   height: 100%;
-  font-size: 62.5%;
 }
 
 // flex grid
@@ -32,6 +30,7 @@ html {
 .card {
   flex: 1 1 auto;
   margin: 20px;
+  min-width: 328px;
   width: 30%;
 
   img {
@@ -41,19 +40,47 @@ html {
   >div {
     border: 1px solid #cccccc;
     margin-top: -4px;
-    padding: 10px;
-    height: 100px;
+    padding: 40px 30px;
     position: relative;
 
     h1 {
-      color: #444444;
-      margin: 10px 0;
-      font-size: 2rem;
+      color: #333333;
+      margin: 10px 0 20px 0;
+      height: 35px;
+      font-size: 16px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    p.address {
+      margin-bottom: 60px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #b1b1b1;
     }
 
     >div {
-      position: absolute;
-      bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      color: #5a5a5a;
+
+      .price {
+        color: #444444;
+        font-weight: 700;
+      }
+
+      .divider {
+        height: 100%;
+        width: 1px;
+        background-color: #e3e3e3;
+        display: inline-block;
+        margin: 0px 10px;
+        vertical-align: bottom;
+      }
+
     }
+
   }
 }

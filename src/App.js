@@ -32,7 +32,7 @@ function App() {
           ? card.advertisementPrice.sellPrice
           : card.advertisementPrice.baseRent,
         numberOfRooms = card.realestateSummary.numberOfRooms,
-        space = card.realestateSummary.space;
+        space = Math.round(card.realestateSummary.space);
       return (
         <Card
           key={i}
